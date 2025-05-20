@@ -2,7 +2,7 @@ from flask import Blueprint, jsonify, request
 from datetime import datetime, timedelta
 import sys
 import os
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(__file__))))
+# sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../../../../data_analysis/src')))
 from src.data_analysis.src.health_connect_interface import HealthConnectInterface
 
 # Blueprint 정의

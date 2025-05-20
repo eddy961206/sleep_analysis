@@ -1,11 +1,16 @@
 import sys
 import os
-sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))  # DON'T CHANGE THIS !!!
+# 현재 파일(main.py)의 디렉토리: D:\WorkSpaces\python_workspace\sleep_analysis\src\backend\api\src
+# 여기서 4번 부모 디렉토리로 올라가면 프로젝트 루트(sleep_analysis)가 된다.
+PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../../../'))
+# 파이썬 모듈 검색 경로 리스트의 맨 앞에 프로젝트 루트를 추가
+if PROJECT_ROOT not in sys.path:
+    sys.path.insert(0, PROJECT_ROOT)
 
 from flask import Flask, jsonify, send_from_directory
-from src.routes.health_connect import health_connect_bp
-from src.routes.analysis import analysis_bp
-from src.routes.auth import auth_bp
+from src.backend.api.src.routes.health_connect import health_connect_bp
+from src.backend.api.src.routes.analysis import analysis_bp
+from src.backend.api.src.routes.auth import auth_bp
 
 # Flask 앱 초기화
 app = Flask(__name__)

@@ -1,9 +1,8 @@
-import sys
-import os
 import pandas as pd
 import numpy as np
 from datetime import datetime, timedelta
-from src.analysis.sleep_analyzer import SleepAnalyzer
+# from src.analysis.sleep_analyzer import SleepAnalyzer # 이 줄을 아래처럼 바꿔!
+from src.data_analysis.src.analysis.sleep_analyzer import SleepAnalyzer  # 현재 폴더(.)의 analysis 폴더에서 가져와!
 
 class HealthConnectInterface:
     """

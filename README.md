@@ -61,9 +61,10 @@ sleep_analysis_project/
    ```
    pip install flask flask-cors pyjwt pandas numpy
    ```
-6. 백엔드 서버를 실행합니다:
+6. 백엔드 서버를 실행합니다: (sleep_analysis_project\src\backend\api\src 에서)
    ```
-   python src\main.py
+   cd src
+   python main.py
    ```
 7. 서버가 성공적으로 실행되면 다음과 같은 메시지가 표시됩니다:
    ```

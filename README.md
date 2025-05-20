@@ -85,7 +85,7 @@ sleep_analysis_project/
    (이 과정은 몇 분 정도 소요될 수 있습니다)
 4. 프론트엔드 개발 서버를 실행합니다:
    ```
-   npm start
+   npm run dev
    ```
 5. 자동으로 기본 웹 브라우저가 열리고 `http://localhost:3000`에서 애플리케이션이 실행됩니다.
 
@@ -97,21 +97,6 @@ sleep_analysis_project/
    - 비밀번호: `password123`
 3. 대시보드에서 수면 데이터 분석 결과를 확인합니다.
 
-## GitHub에 프로젝트 올리기
-
-1. [GitHub](https://github.com/) 계정을 생성합니다 (아직 없는 경우).
-2. GitHub 웹사이트에서 새 저장소(repository)를 생성합니다:
-   - GitHub에 로그인 후 오른쪽 상단의 "+" 아이콘을 클릭하고 "New repository"를 선택합니다.
-   - 저장소 이름을 입력합니다 (예: "sleep-analysis-project").
-   - "Create repository" 버튼을 클릭합니다.
-3. GitHub Desktop을 사용하여 프로젝트를 업로드합니다:
-   - [GitHub Desktop](https://desktop.github.com/)을 다운로드하고 설치합니다.
-   - GitHub 계정으로 로그인합니다.
-   - "File" > "Add local repository"를 클릭합니다.
-   - 프로젝트 폴더를 선택합니다 (예: `C:\Projects\sleep_analysis_project`).
-   - "Add repository" 버튼을 클릭합니다.
-   - "Publish repository" 버튼을 클릭하고 생성한 저장소를 선택합니다.
-   - "Publish repository" 버튼을 다시 클릭하여 업로드를 완료합니다.
 
 ## 문제 해결
 
